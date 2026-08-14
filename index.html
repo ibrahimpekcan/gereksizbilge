@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gereksiz Bilge</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1e293b; --muted:#64748b; --accent:#0f172a;
+          --line:#e2e8f0; --card:#f8fafc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f172a; --fg:#e2e8f0; --muted:#94a3b8; --accent:#facc15;
+            --line:#1e293b; --card:#1e293b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:4rem 1.25rem; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size:2rem; margin:0 0 .5rem; }
+  p { color: var(--muted); }
+  .links { display:grid; gap:.75rem; margin-top:2.5rem; }
+  a.card { display:block; padding:1rem 1.2rem; background:var(--card);
+           border:1px solid var(--line); border-radius:8px;
+           text-decoration:none; color:var(--fg); }
+  a.card:hover { border-color: var(--accent); }
+  a.card span { display:block; color:var(--muted); font-size:.9rem; margin-top:.2rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gereksiz Bilge</h1>
+  <p>
+    A personal content automation tool that produces short educational videos and
+    publishes them to its operator's own social media accounts.
+  </p>
+  <p>
+    Kısa eğitici videolar üretip işletmecisinin kendi sosyal medya hesaplarında
+    yayınlayan kişisel bir içerik otomasyon aracı.
+  </p>
+  <div class="links">
+    <a class="card" href="privacy.html">
+      Privacy Policy
+      <span>Gizlilik Politikası</span>
+    </a>
+    <a class="card" href="terms.html">
+      Terms of Service
+      <span>Kullanım Şartları</span>
+    </a>
+  </div>
+</main>
+</body>
+</html>

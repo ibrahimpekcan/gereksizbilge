@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Gereksiz Bilge</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1e293b; --muted: #64748b;
+    --accent: #0f172a; --line: #e2e8f0; --card: #f8fafc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f172a; --fg:#e2e8f0; --muted:#94a3b8;
+            --accent:#facc15; --line:#1e293b; --card:#1e293b; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .7rem; padding-top: 1.2rem;
+       border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: var(--card); padding: .15rem .4rem; border-radius: 4px;
+         font-size: .88em; }
+  .box { background: var(--card); border-left: 3px solid var(--accent);
+         padding: .9rem 1.1rem; border-radius: 0 6px 6px 0; margin: 1.2rem 0; }
+  .tr { margin-top: 3.5rem; padding-top: 2rem; border-top: 2px solid var(--line); }
+  a { color: inherit; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Gereksiz Bilge — content publishing tool<br>
+Effective date: 14 August 2026 · Last updated: 14 August 2026</p>
+
+<h2>1. Who we are</h2>
+<p>
+  <strong>Gereksiz Bilge</strong> is a personal content automation tool operated by an
+  individual creator. It produces short educational videos and publishes them to the
+  operator's own social media accounts.
+</p>
+<p>
+  This tool is <strong>not a public service</strong>. It is not offered to, installed by,
+  or used by third parties. The only TikTok account it connects to is the operator's own.
+</p>
+
+<h2>2. What data we access</h2>
+<p>
+  When you authorise this application with your TikTok account, we request the minimum
+  permissions needed to upload video files:
+</p>
+<table>
+  <tr><th>Permission</th><th>Why we need it</th></tr>
+  <tr>
+    <td><code>user.info.basic</code></td>
+    <td>To confirm which account is connected and to display the account nickname in
+        our internal logs.</td>
+  </tr>
+  <tr>
+    <td><code>video.upload</code></td>
+    <td>To send video files the operator created to the account's drafts, so they can
+        be reviewed and posted from the TikTok app.</td>
+  </tr>
+  <tr>
+    <td><code>video.publish</code> <em>(if granted)</em></td>
+    <td>To publish an approved video directly at a scheduled time.</td>
+  </tr>
+</table>
+
+<h2>3. What we store</h2>
+<ul>
+  <li><strong>Access and refresh tokens</strong> — stored on a private server in a file
+      readable only by the operating system account that runs the tool
+      (file permission <code>600</code>). These are required to keep the connection
+      active without repeated sign-in.</li>
+  <li><strong>Basic account identifiers</strong> — the TikTok open ID and display name,
+      used to confirm the correct account is connected.</li>
+  <li><strong>Upload records</strong> — the identifier and status of each upload we
+      initiated, so a failed upload can be retried without creating a duplicate post.</li>
+</ul>
+
+<div class="box">
+  <strong>We do not collect anything else.</strong> We do not read your videos, comments,
+  followers, direct messages, likes, or watch history. We do not use analytics or
+  advertising services. We do not build user profiles.
+</div>
+
+<h2>4. What we do with it</h2>
+<p>
+  Stored data is used for one purpose only: uploading video files created by the operator
+  to the operator's own TikTok account. It is not used for any other purpose.
+</p>
+
+<h2>5. Sharing</h2>
+<p>
+  <strong>We do not sell, rent, trade, or share your data with anyone.</strong>
+  No data is transmitted to third parties. The only network destination is TikTok's own
+  API endpoints, which is unavoidable for the upload to happen.
+</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>Tokens are kept only while the connection is in use, and are overwritten each time
+      they are refreshed.</li>
+  <li>You can revoke access at any time from
+      <strong>TikTok app → Profile → Settings and privacy → Security → Apps and
+      connections</strong>. Revoking makes stored tokens immediately useless.</li>
+  <li>To request deletion of everything we hold, email the address below. All stored
+      tokens and records are deleted within 30 days of the request.</li>
+</ul>
+
+<h2>7. Security</h2>
+<ul>
+  <li>All communication with TikTok uses HTTPS.</li>
+  <li>Credential files are restricted to the service account and are excluded from
+      version control and from deployment copies.</li>
+  <li>Access to the server is by SSH key only.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>
+  This tool is not directed at children and does not knowingly process data from anyone
+  under the age required by TikTok's own terms of service.
+</p>
+
+<h2>9. Changes</h2>
+<p>
+  If this policy changes, the revised version will be published at this address with an
+  updated date at the top.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  Questions or deletion requests:
+  <a href="mailto:ibrahimpekcan@gmail.com">ibrahimpekcan@gmail.com</a>
+</p>
+
+
+<div class="tr">
+<h1>Gizlilik Politikası</h1>
+<p class="sub">Gereksiz Bilge — içerik yayınlama aracı<br>
+Yürürlük tarihi: 14 Ağustos 2026</p>
+
+<h2>1. Kimiz</h2>
+<p>
+  <strong>Gereksiz Bilge</strong>, bireysel bir içerik üreticisi tarafından işletilen
+  kişisel bir içerik otomasyon aracıdır. Kısa eğitici videolar üretir ve bunları
+  işletmecinin kendi sosyal medya hesaplarında yayınlar.
+</p>
+<p>
+  Bu araç <strong>kamuya açık bir hizmet değildir</strong>. Üçüncü kişilere sunulmaz,
+  onlar tarafından kurulmaz veya kullanılmaz. Bağlandığı tek TikTok hesabı,
+  işletmecinin kendi hesabıdır.
+</p>
+
+<h2>2. Eriştiğimiz veriler</h2>
+<p>
+  TikTok hesabınızla yetkilendirme yaptığınızda yalnızca video yüklemek için gereken
+  asgari izinleri isteriz:
+</p>
+<table>
+  <tr><th>İzin</th><th>Neden gerekli</th></tr>
+  <tr>
+    <td><code>user.info.basic</code></td>
+    <td>Hangi hesabın bağlı olduğunu doğrulamak ve hesap adını iç kayıtlarda
+        göstermek için.</td>
+  </tr>
+  <tr>
+    <td><code>video.upload</code></td>
+    <td>İşletmecinin ürettiği video dosyalarını hesabın taslaklarına göndermek için;
+        böylece TikTok uygulamasından gözden geçirilip paylaşılabilir.</td>
+  </tr>
+  <tr>
+    <td><code>video.publish</code> <em>(verilirse)</em></td>
+    <td>Onaylanmış bir videoyu planlanan saatte doğrudan yayınlamak için.</td>
+  </tr>
+</table>
+
+<h2>3. Sakladıklarımız</h2>
+<ul>
+  <li><strong>Erişim ve yenileme jetonları</strong> — özel bir sunucuda, yalnızca aracı
+      çalıştıran işletim sistemi hesabının okuyabileceği bir dosyada
+      (izin <code>600</code>) saklanır.</li>
+  <li><strong>Temel hesap tanımlayıcıları</strong> — doğru hesabın bağlı olduğunu
+      doğrulamak için TikTok açık kimliği ve görünen ad.</li>
+  <li><strong>Yükleme kayıtları</strong> — başarısız bir yüklemenin mükerrer gönderi
+      oluşturmadan tekrarlanabilmesi için her yüklemenin kimliği ve durumu.</li>
+</ul>
+
+<div class="box">
+  <strong>Bunun dışında hiçbir şey toplamıyoruz.</strong> Videolarınızı, yorumlarınızı,
+  takipçilerinizi, mesajlarınızı, beğenilerinizi veya izleme geçmişinizi okumuyoruz.
+  Analitik veya reklam hizmeti kullanmıyoruz. Kullanıcı profili oluşturmuyoruz.
+</div>
+
+<h2>4. Kullanım amacı</h2>
+<p>
+  Saklanan veriler tek bir amaçla kullanılır: işletmecinin ürettiği video dosyalarını
+  yine işletmecinin kendi TikTok hesabına yüklemek. Başka hiçbir amaçla kullanılmaz.
+</p>
+
+<h2>5. Paylaşım</h2>
+<p>
+  <strong>Verilerinizi kimseyle satmıyor, kiralamıyor, takas etmiyor veya
+  paylaşmıyoruz.</strong> Üçüncü taraflara hiçbir veri aktarılmaz. Tek ağ hedefi,
+  yüklemenin gerçekleşmesi için zorunlu olan TikTok'un kendi API adresleridir.
+</p>
+
+<h2>6. Saklama ve silme</h2>
+<ul>
+  <li>Jetonlar yalnızca bağlantı kullanımda olduğu sürece tutulur ve her yenilemede
+      üzerine yazılır.</li>
+  <li>Erişimi dilediğiniz an <strong>TikTok uygulaması → Profil → Ayarlar ve gizlilik →
+      Güvenlik → Uygulamalar ve bağlantılar</strong> yolundan iptal edebilirsiniz.
+      İptal, saklanan jetonları anında kullanılamaz hâle getirir.</li>
+  <li>Elimizdeki her şeyin silinmesini istemek için aşağıdaki adrese yazın. Tüm jeton
+      ve kayıtlar talepten sonraki 30 gün içinde silinir.</li>
+</ul>
+
+<h2>7. Güvenlik</h2>
+<ul>
+  <li>TikTok ile tüm iletişim HTTPS üzerinden yapılır.</li>
+  <li>Kimlik dosyaları servis hesabıyla sınırlıdır; sürüm kontrolüne ve dağıtım
+      kopyalarına dâhil edilmez.</li>
+  <li>Sunucuya erişim yalnızca SSH anahtarı iledir.</li>
+</ul>
+
+<h2>8. Çocuklar</h2>
+<p>
+  Bu araç çocuklara yönelik değildir ve TikTok'un kendi hizmet şartlarının gerektirdiği
+  yaşın altındaki kişilerden bilerek veri işlemez.
+</p>
+
+<h2>9. Değişiklikler</h2>
+<p>
+  Bu politika değişirse, güncellenmiş sürüm bu adreste, üstünde yeni tarihle yayımlanır.
+</p>
+
+<h2>10. İletişim</h2>
+<p>
+  Sorular ve silme talepleri:
+  <a href="mailto:ibrahimpekcan@gmail.com">ibrahimpekcan@gmail.com</a>
+</p>
+</div>
+
+<footer>
+  Gereksiz Bilge · <a href="terms.html">Terms of Service / Kullanım Şartları</a>
+</footer>
+
+</main>
+</body>
+</html>
